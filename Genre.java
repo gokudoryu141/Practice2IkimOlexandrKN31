@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class Genre {
     private String name;
-    private String description;
+    private String author;
     private int pages;
     private ArrayList<String> legibility;
     private boolean hardcover;
     private boolean quality;
     private GenreStatus status;
 
-    public Genre(String name, String description, int pages,
+    public Genre(String name, String author, int pages,
                  ArrayList<String> legibility, boolean hardcover, boolean quality, GenreStatus status) {
         this.name = name;
-        this.description = description;
+        this.author = author;
         this.pages = pages;
         this.legibility = legibility;
         this.hardcover = hardcover;
@@ -31,8 +31,8 @@ public class Genre {
     public void setname(String name) {
         this.name = name;
     }
-    public void setBookDescription(String description) {
-        this.description = description;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public void setBookPages(int pages) {
@@ -51,16 +51,12 @@ public class Genre {
         return hardcover;
     }
 
-    public void setHardcover(boolean hasWiFi) {
-        this.hasWiFi = hasWiFi;
+    public void hardcover(boolean hardcover) {
+        this.hardcover = hardcover;
     }
 
-    public boolean hasAirConditioning() {
-        return hasAirConditioning;
-    }
-
-    public void setHasTranslated(boolean hasAirConditioning) {
-        this.hasAirConditioning = hasAirConditioning;
+    public void setTranslated(boolean translated) {
+        this.translated = translated;
     }
 
     public GenreStatus getStatus() {

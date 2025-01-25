@@ -3,71 +3,52 @@ package practice.task22;
 import java.util.ArrayList;
 
 public class Genre {
-    private String routeName;
-    private String routeDescription;
-    private int passengerCapacity;
+    private String name;
     private String description;
-    private ArrayList<String> amenities;
-    private boolean hasWiFi;
-    private boolean hasAirConditioning;
+    private int pages;
+    private ArrayList<String> legibility;
+    private boolean hardcover;
+    private boolean quality;
     private GenreStatus status;
 
-    public Genre(String routeName, String routeDescription, int passengerCapacity, String description,
-                 ArrayList<String> amenities, boolean hasWiFi, boolean hasAirConditioning, GenreStatus status) {
-        this.routeName = routeName;
-        this.routeDescription = routeDescription;
-        this.passengerCapacity = passengerCapacity;
+    public Genre(String name, String description, int pages,
+                 ArrayList<String> legibility, boolean hardcover, boolean quality, GenreStatus status) {
+        this.name = name;
         this.description = description;
-        this.amenities = amenities;
-        this.hasWiFi = hasWiFi;
-        this.hasAirConditioning = hasAirConditioning;
+        this.pages = pages;
+        this.legibility = legibility;
+        this.hardcover = hardcover;
+        this.quality = quality;
         this.status = status;
     }
 
     public Genre() {}
 
-    public String getRouteName() {
-        return routeName;
+    public String getname() {
+        return name;
     }
 
-    public void setBookName(String routeName) {
-        this.routeName = routeName;
+    public void setname(String name) {
+        this.name = name;
     }
-
-    public String getRouteDescription() {
-        return routeDescription;
-    }
-
-    public void setBookDescription(String routeDescription) {
-        this.routeDescription = routeDescription;
-    }
-
-    public int getPassengerCapacity() {
-        return passengerCapacity;
-    }
-
-    public void setBookPages(int passengerCapacity) {
-        this.passengerCapacity = passengerCapacity;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
+    public void setBookDescription(String description) {
         this.description = description;
     }
 
-    public ArrayList<String> getAmenities() {
-        return amenities;
+    public void setBookPages(int pages) {
+        this.pages = pages;
+    }
+
+    public ArrayList<String> getLegibility() {
+        return legibility;
     }
 
     public void setLegibility(ArrayList<String> amenities) {
         this.amenities = amenities;
     }
 
-    public boolean hasWiFi() {
-        return hasWiFi;
+    public boolean hardcover() {
+        return hardcover;
     }
 
     public void setHardcover(boolean hasWiFi) {
